@@ -1,16 +1,15 @@
-import { Box, Button } from "@chakra-ui/react";
-import { FaPlus } from "react-icons/fa";
+import { Box } from "@chakra-ui/react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import DeveloperList from "../components/DeveloperList";
+import developers from "../data/developers";
 
 const Index = () => {
   return (
     <Box>
       <Header />
       <Box as="main" py={8}>
-        <Button>
-          Hello world! <FaPlus />
-        </Button>
+        <DeveloperList developers={developers} />
       </Box>
       <Footer />
     </Box>
